@@ -1,0 +1,1611 @@
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram.dispatcher.dispatcher:Polling is stopped.
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=MessageToDeleteNotFound('Message to delete not found')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 17, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 2589, in delete_message
+    return await self.request(api.Methods.DELETE_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToDeleteNotFound: Message to delete not found
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=MessageToDeleteNotFound('Message to delete not found')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 16, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 2589, in delete_message
+    return await self.request(api.Methods.DELETE_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToDeleteNotFound: Message to delete not found
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'coroutine' object has no attribute 'username'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    bot_username = await bot.get_me().username
+AttributeError: 'coroutine' object has no attribute 'username'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'coroutine' object has no attribute 'username'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    bot_username = await bot.get_me().username
+AttributeError: 'coroutine' object has no attribute 'username'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'coroutine' object has no attribute 'username'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    bot_username = await bot.get_me().username
+AttributeError: 'coroutine' object has no attribute 'username'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-36' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-36' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-48' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest("Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 30, in user_profile
+    await bot.send_message(msg.chat.id, f'*\U0001f9fe Профиль:* {user[1]}\n\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Can't parse inline keyboard button: text buttons are unallowed in the inline keyboard
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 117")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 117
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 117")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 117
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 117")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 117
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 117")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 117
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 117")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 117
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=CantParseEntities("Can't parse entities: can't find end of the entity starting at byte offset 117")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.CantParseEntities: Can't parse entities: can't find end of the entity starting at byte offset 117
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=ButtonDataInvalid('Button_data_invalid')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ButtonDataInvalid: Button_data_invalid
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=ButtonDataInvalid('Button_data_invalid')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 46, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ButtonDataInvalid: Button_data_invalid
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest('Unsupported parse_mode')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 47, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest('Unsupported parse_mode')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 47, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest('Unsupported parse_mode')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 47, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=BadRequest('Unsupported parse_mode')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 47, in coin_game
+    await msg.answer('\u267b\ufe0f Доступные игры:\n'
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\types\message.py", line 361, in answer
+    return await self.bot.send_message(
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 18, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 1396, in wrapped
+    return await func(*args, **kwargs)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\cmd_function.py", line 16, in start_for_user
+    if not db_user_info(msg.chat.id):
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 1396, in wrapped
+    return await func(*args, **kwargs)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\cmd_function.py", line 15, in start_for_user
+    if not db_user_info(msg.chat.id):
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\others.py", line 23, in cmd_cancel
+    await start_for_user(message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 1396, in wrapped
+    return await func(*args, **kwargs)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\cmd_function.py", line 14, in start_for_user
+    if not db_user_info(msg.chat.id):
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\others.py", line 23, in cmd_cancel
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 1396, in wrapped
+    return await func(*args, **kwargs)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\cmd_function.py", line 14, in start_for_user
+    if not db_user_info(msg.chat.id):
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'delete'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\others.py", line 23, in cmd_cancel
+    await message.delete()
+AttributeError: 'CallbackQuery' object has no attribute 'delete'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\others.py", line 23, in cmd_cancel
+    await bot.delete_message(message.chat.id, message.message.message_id)
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=AttributeError("'CallbackQuery' object has no attribute 'chat'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 286, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\others.py", line 23, in cmd_cancel
+    await bot.delete_message(message.chat.id, message.message.message_id)
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 321, in user_create_lobby
+    db_create_game_lobby(msg.chat.id, cur_bet, game)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\database\db_api.py", line 584, in db_create_game_lobby
+    print(f'd_api.db_create_game_lobby: {e}')
+sqlite3.OperationalError: database is locked
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 321, in user_create_lobby
+    db_create_game_lobby(msg.chat.id, cur_bet, game)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\database\db_api.py", line 584, in db_create_game_lobby
+    print(f'd_api.db_create_game_lobby: {e}')
+sqlite3.OperationalError: database is locked
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 321, in user_create_lobby
+    db_create_game_lobby(msg.chat.id, cur_bet, game)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\database\db_api.py", line 582, in db_create_game_lobby
+    cur.execute('INSERT INTO game_stats VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+sqlite3.OperationalError: database is locked
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=TypeError("float() argument must be a string or a number, not 'NoneType'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 315, in user_create_lobby
+    balance = float(data['balance'])
+TypeError: float() argument must be a string or a number, not 'NoneType'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=TypeError("float() argument must be a string or a number, not 'NoneType'")>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 315, in user_create_lobby
+    balance = float(data['balance'])
+TypeError: float() argument must be a string or a number, not 'NoneType'
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 321, in user_create_lobby
+    db_create_game_lobby(msg.chat.id, cur_bet, game)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\database\db_api.py", line 585, in db_create_game_lobby
+    return lid
+sqlite3.OperationalError: database is locked
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_function.py", line 321, in user_create_lobby
+    game_id = db_create_game_lobby(msg.chat.id, cur_bet, game)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\database\db_api.py", line 584, in db_create_game_lobby
+    return lid
+sqlite3.OperationalError: database is locked
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=OperationalError('database is locked')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\admin_function.py", line 343, in add_coupon
+    db_insert_coupon(gen_coup, msg.text)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\database\db_api.py", line 508, in db_insert_coupon
+    print(f'db_api.db_insert_coupon: {e}')
+sqlite3.OperationalError: database is locked
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:409> exception=MessageToDeleteNotFound('Message to delete not found')>
+Traceback (most recent call last):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 417, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 238, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 259, in process_update
+    return await self.message_handlers.notify(update.message)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\dispatcher\handler.py", line 116, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\handlers\user_menu.py", line 17, in user_profile
+    await bot.delete_message(msg.chat.id, msg.message_id)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\bot.py", line 2589, in delete_message
+    return await self.request(api.Methods.DELETE_MESSAGE, payload)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Bulat\Desktop\Clark kam bot\venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageToDeleteNotFound: Message to delete not found
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: hyehyehyehyehyehyehyehye [@hyehyebot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
