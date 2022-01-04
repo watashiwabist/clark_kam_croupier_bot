@@ -1,16 +1,19 @@
-from aiogram import types
-from aiogram.utils.exceptions import Throttled
-
 from config import reg_text, auth_text
-from database import db_user_info, db_user_reg, db_insert_admin, db_delete_admin, db_select_admins, top_up_select
-from loader import dp, bot
+from database import db_user_info, db_user_reg, db_insert_admin, db_delete_admin, db_select_admins, top_up_select, \
+    db_get_bot_status
 from keyboards import main_start
+from loader import dp, bot
+
 
 @dp.message_handler(commands=['start'])
 @dp.throttled(lambda msg, loop, *args, **kwargs: loop.create_task(bot.send_message(msg.from_user.id, "Перестаньте "
                                                                                                      "флудить!")),
               rate=5)
 async def start_for_user(msg):
+    bot_status = db_get_bot_status()
+    if bot_status == 0:
+        await msg.answer('Бот находится на тех. обслуживании.\n\nПожалуйста, попробуйте позже')
+        return
     if not db_user_info(msg.chat.id):
         db_user_reg(msg)
         await msg.answer(reg_text, reply_markup=await main_start(msg.chat.id))

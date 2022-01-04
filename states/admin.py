@@ -2,14 +2,6 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 
 
 class settAdmin(StatesGroup):
-    addCatalog = State()
-    addSubCatalog = State()
-    addProductName = State()
-    addProductDescription = State()
-    addProductPrice = State()
-    addProductImg = State()
-    addProductAdminPrice = State()
-    addProductData = State()
     addCoupon = State()
     delItem = State()
 
@@ -17,11 +9,17 @@ class settAdmin(StatesGroup):
 class spam(StatesGroup):
     post = State()
 
+class qiwi(StatesGroup):
+    set_qiwi = State()
 
-class transaction(StatesGroup):
-    ltc_address = State()
-    amount = State()
+class qiwi2(StatesGroup):
+    set_qiwi = State()
 
+class yoomoney(StatesGroup):
+    set_api = State()
 
-class changeCoinbase(StatesGroup):
-    token = State()
+class freekassa(StatesGroup):
+    set_api = State()
+
+class fee(StatesGroup):
+    fee = State()

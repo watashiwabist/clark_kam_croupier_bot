@@ -17,5 +17,7 @@ async def main_start(user):
     get_admin = db_select_admins(user)
     if get_admin:
         if get_admin[1] == 2:
-            menu.add('Сделать рассылку', 'Купоны', 'Сменить API')
+            menu.add('Сделать рассылку', 'Купоны')
+            menu.add('Сменить API', 'Комиссия')
+            menu.add('Состояние')
     return menu

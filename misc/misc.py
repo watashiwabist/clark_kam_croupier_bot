@@ -4,9 +4,11 @@ import random
 import string
 import time
 
-from coinbase.wallet.client import Client
+import requests
+from SimpleQIWI import QApi
+from pyqiwip2p import QiwiP2P
 
-from database import db_select_client, db_select_admins, db_select_id_admins
+from database import db_select_admins, db_select_id_admins, db_get_merchant_token, db_check_comments
 from loader import bot
 
 
@@ -26,35 +28,115 @@ async def time_pay(msg):
         await bot.send_message(msg.chat.id, 'Срок действия счета на оплату истек.')
 
 
-async def coinbase_client():
-    coinbase = db_select_client()
-    client = Client(coinbase[0], coinbase[1])
-    return client
-
-async def get_USD_LTC(amount):
-    client = await coinbase_client()
-    curs = client.get_spot_price(currency_pair='LTC-USD')['amount']
-    price = round((float(amount) / float(curs)), 8)
-    return price
+# async def connect_yoomoney(token):
+#     try:
+#         client = Client(token)
+#         user = client.account_info()
+#         return user
+#     except:
+#         return False
 
 
-async def get_LTC_USD(amount):
-    client = await coinbase_client()
-    curs = client.get_spot_price(currency_pair='LTC-USD')['amount']
-    amount = round(float(amount) * float(curs), 2)
-    return amount
-
-
-async def cur_transfer(amount):
+async def connect_qiwi2(token):
     try:
-        client = await coinbase_client()
-        price = await get_USD_LTC(amount)
-        user_id = client.get_accounts()[0]['id']
-        address_info = client.create_address(user_id)
-        data = [price, address_info['address'], address_info['id']]
-        return data
+        client = QApi(token=token, phone='')
+        client.balance
+        return True
+    except:
+        return False
+
+
+async def pay_qiwi(amount, account):
+    token = db_get_merchant_token('qiwi2')
+    try:
+        client = QApi(token=token, phone='')
+        if client.balance < amount:
+            raise Exception('not_enough_money')
+        client.pay(account=account, amount=amount)
+        return True
     except Exception as e:
-        print(f'misc.cur_transfer: {e}')
+        return False
+
+
+async def yoo_balance():
+    token = db_get_merchant_token('yoomoney')
+    response = requests.post(
+        'https://yoomoney.ru/api/account-info',
+        headers={'Authorization': f'Bearer {token}',
+                 'Host': 'yoomoney.ru',
+                 'Content-Type': 'application/x-www-form-urlencoded'}
+    )
+    content = response.json()
+    return content['balance']
+
+
+async def pay_yoo(amount, account):
+    try:
+        token = db_get_merchant_token('yoomoney')
+        balance = await yoo_balance()
+        if balance < amount:
+            raise Exception('not_enough_money')
+        response = requests.post(
+            'https://yoomoney.ru/api/request-payment',
+            headers={'Authorization': f'Bearer {token}',
+                     'Host': 'yoomoney.ru',
+                     'Content-Type': 'application/x-www-form-urlencoded'},
+            params=f'pattern_id=p2p&to={account}&amount={amount}'
+        )
+        content = response.json()
+        return content
+    except:
+        return False
+
+
+# async def create_yoo_bill(sum):
+#     token = db_get_merchant_token('yoomoney')
+#     try:
+#         client = Client(token)
+#         user = client.account_info()
+#         comment = await get_payment_comment()
+#         quickpay = Quickpay(
+#             receiver=f"{user.account}",
+#             quickpay_form="shop",
+#             targets="Пополнение баланса",
+#             paymentType="SB",
+#             sum=sum,
+#             label=comment,
+#             comment=comment
+#         )
+#         return quickpay
+#     except Exception as e:
+#         print(f'misc.misc.create_yoo_bill: {e}')
+
+
+async def get_payment_comment():
+    passwd = list("1234567890")
+    random.shuffle(passwd)
+    comment = "".join([random.choice(passwd) for x in range(30)])
+    while not db_check_comments(comment):
+        comment = "".join([random.choice(passwd) for x in range(30)])
+    return comment
+
+
+async def create_qiwi_bill(sum):
+    token = db_get_merchant_token('qiwi')
+    try:
+        p2p = QiwiP2P(auth_key=token)
+        qiwi_comment = await get_payment_comment()
+        new_bill = p2p.bill(comment=qiwi_comment, amount=int(sum), lifetime=15)
+        return new_bill
+    except Exception as e:
+        print(f'misc.create_qiwi_bill: {e}')
+
+
+async def qiwi_bill_info(bill_id):
+    token = db_get_merchant_token('qiwi')
+    try:
+        p2p = QiwiP2P(auth_key=token)
+        info = p2p.check(bill_id)
+        return info
+    except Exception as e:
+        print(f'misc.qiwi_bill_info: {e}')
 
 
 def username(name):
@@ -81,3 +163,17 @@ def generate_random_string(length):
     letters = string.ascii_lowercase
     rand_string = ''.join(random.choice(letters) for _ in range(length))
     return rand_string
+
+
+async def sleep(sec):
+    time.sleep(sec)
+
+
+def count_players(lobby_info):
+    cnt = 0
+    for player in range(3, 8):
+        if lobby_info[player] is not None:
+            cnt += 1
+        else:
+            break
+    return cnt

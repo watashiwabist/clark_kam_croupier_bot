@@ -1,7 +1,9 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from config import value, chat_link
-from database import db_select_buyers, db_select_product, db_select_item, db_select_admins
+from config import chat_link, value
+from database import db_get_active_lobby, db_get_user_name
+from misc import count_players
+
 
 async def deposit():
     deposit = InlineKeyboardMarkup()
@@ -10,14 +12,14 @@ async def deposit():
     )
     return deposit
 
+
 async def profile():
     profile_menu = InlineKeyboardMarkup(row_width=2)
     profile_menu.add(
-        InlineKeyboardButton('Пополнить | QIWI', callback_data='TEST'),
-        InlineKeyboardButton('Пополнить | Юмани', callback_data='TEST'),
+        InlineKeyboardButton('Пополнить | QIWI', callback_data='TOPUP_qiwi'),
     )
     profile_menu.add(
-        InlineKeyboardButton('Пополнить | VISA/MASTERCARD', callback_data='TEST')
+        InlineKeyboardButton('Пополнить | VISA/MASTERCARD', callback_data='TOPUP_freekassa')
     )
     profile_menu.add(
         InlineKeyboardButton('Заказать вывод', callback_data='WITHDRAW')
@@ -27,15 +29,48 @@ async def profile():
     )
     return profile_menu
 
-async def game_keyboard(game_name):
+
+async def freekassa_payment_markup():
+    markup = InlineKeyboardMarkup()
+    markup.add(
+        InlineKeyboardButton('Карта', callback_data='WITHDRAW_freekassa_CARD'),
+        InlineKeyboardButton('FKWallet', callback_data='WITHDRAW_freekassa_FKWallet RUB'),
+        # InlineKeyboardButton('PERFECT', callback_data='WITHDRAW_freekassa_PERFECT'),
+    )
+    return markup
+
+
+async def withdraw_markup():
+    markup = InlineKeyboardMarkup(row_width=3)
+    markup.add(
+        InlineKeyboardButton('QIWI', callback_data='WITHDRAW_qiwi'),
+        InlineKeyboardButton('Freekassa', callback_data='PAYMENT_FREEKASSA')
+    )
+    return markup
+
+
+async def game_keyboard(game_name, chat_id):
+    active_lobby = db_get_active_lobby(game_name, 'active')
     game_markup = InlineKeyboardMarkup(row_width=2)
+    for lobby in active_lobby:
+        add = ''
+        if game_name == 'roulette_game':
+            player_count = count_players(lobby)
+            add = f' | {player_count}/5'
+        user_name = db_get_user_name(lobby[3])
+        who_user_id = ' (Вы) ' if chat_id == lobby[3] else ''
+        game_markup.add(
+            InlineKeyboardButton(f'🔷 {user_name} {who_user_id}| ставка {lobby[2]} {value}{add}',
+                                 callback_data=f'LOBBY_{lobby[0]}-{game_name}-{lobby[2]}-{lobby[3]}')
+        )
     game_markup.add(
-        InlineKeyboardButton('🗂 Мои игры', callback_data=f'USER_PROFILE'),
+        InlineKeyboardButton('🗂 Мои игры', callback_data=f'MY_GAMES_{game_name}'),
         InlineKeyboardButton('♻️Обновить', callback_data=f'REFRESH_{game_name}'),
         InlineKeyboardButton('✔️Создать игру', callback_data=f'CREATE_GAME_{game_name}'),
         InlineKeyboardButton('🖥 Статистика', callback_data=f'STATISTICS_{game_name}'),
     )
     return game_markup
+
 
 async def chat_redirect():
     chat_markup = InlineKeyboardMarkup()
@@ -45,43 +80,82 @@ async def chat_redirect():
     return chat_markup
 
 
-
-async def buyers_list(user, back=None):
-    markup = InlineKeyboardMarkup(row_width=2)
-    db_buyers = db_select_buyers(user)
-    if back:
-        markup.add(InlineKeyboardButton('Назад', callback_data='ORDERS'))
-        return markup
-    markup.add(*[InlineKeyboardButton(db_buyers[a][2], callback_data=f'PURCHASED_{db_buyers[a][4]}') for a in
-                 range(len(db_buyers))])
-    markup.add(InlineKeyboardButton('Назад', callback_data='BACK_PROFILE'))
-    return markup
+async def lobby_info(game_id, game_name):
+    lobby_info_markup = InlineKeyboardMarkup()
+    lobby_info_markup.add(
+        InlineKeyboardButton('Играть', callback_data=f'PLAY_{game_id}'),
+        InlineKeyboardButton('Отмена', callback_data=f'NOPLAY_{game_name}')
+    )
+    return lobby_info_markup
 
 
-async def all_product(id, cat_id, admin):
-    markup = InlineKeyboardMarkup(row_width=2)
-    products = db_select_product(id)
-    markup.add(*[InlineKeyboardButton(f'{product[2]} - {product[4]}{value}',
-                                      callback_data=f'PRODUCT:{product[0]}') for product in products if admin or len(db_select_item(product[0]))])
-    markup.add(InlineKeyboardButton('Назад', callback_data=f'ID_CATALOG_{cat_id}'))
-    return markup
+async def lobby_owner(game_id):
+    lobby_owner_markup = InlineKeyboardMarkup()
+    lobby_owner_markup.add(
+        InlineKeyboardButton('Удалить', callback_data=f'DELETE_{game_id}')
+    )
+    return lobby_owner_markup
 
 
-async def count_buy(product_id):
-    markup = InlineKeyboardMarkup(row_width=3)
-    button_1 = InlineKeyboardButton('1', callback_data=f'BUY:1:{product_id}')
-    button_2 = InlineKeyboardButton('2', callback_data=f'BUY:2:{product_id}')
-    button_3 = InlineKeyboardButton('3', callback_data=f'BUY:3:{product_id}')
-    button_4 = InlineKeyboardButton('4', callback_data=f'BUY:4:{product_id}')
-    button_5 = InlineKeyboardButton('5', callback_data=f'BUY:5:{product_id}')
-    button_6 = InlineKeyboardButton('6', callback_data=f'BUY:6:{product_id}')
-    markup.add(InlineKeyboardButton('Выберите количество', callback_data='CHOOSE_COUNT'))
-    markup.add(button_1, button_2, button_3, button_4, button_5, button_6)
-    return markup
+async def RPS_game(lobby_id, player):
+    RPS_game_markup = InlineKeyboardMarkup(row_width=3)
+    RPS_game_markup.add(
+        InlineKeyboardButton('Камень 🪨', callback_data=f'RPS_ROCK_{lobby_id}_{player}'),
+        InlineKeyboardButton('Ножницы ✂️', callback_data=f'RPS_SCISSORS_{lobby_id}_{player}'),
+        InlineKeyboardButton('Бумага 📄', callback_data=f'RPS_PAPER_{lobby_id}_{player}'),
+    )
+    return RPS_game_markup
 
 
-async def check_pay(price, amount, address_id):
-    markup = InlineKeyboardMarkup(row_width=2)
-    button_1 = InlineKeyboardButton('Проверить платеж', callback_data=f'CHECK_PAY:{price}:{amount}:{address_id}')
-    markup.add(button_1)
+async def coin_game_markup(lobby_id, player):
+    coin_game_markup = InlineKeyboardMarkup()
+    coin_game_markup.add(
+        InlineKeyboardButton('Орел', callback_data=f'COIN_CHOOSE_eagle_{lobby_id}_{player}'),
+        InlineKeyboardButton('Решка', callback_data=f'COIN_CHOOSE_noteagle_{lobby_id}_{player}')
+    )
+    return coin_game_markup
+
+
+async def spin_the_roulette(lobby_id):
+    spin_the_roulette_markup = InlineKeyboardMarkup()
+    spin_the_roulette_markup.add(
+        InlineKeyboardButton('Крутить рулетку', callback_data=f'SPIN_{lobby_id}')
+    )
+    return spin_the_roulette_markup
+
+
+async def point_choice(lobby_id, player):
+    point_choice_markup = InlineKeyboardMarkup()
+    point_choice_markup.add(
+        InlineKeyboardButton('Взять', callback_data=f'TAKE_{lobby_id}_{player}'),
+        InlineKeyboardButton('Хватит', callback_data=f'YETER_{lobby_id}_{player}')
+    )
+    return point_choice_markup
+
+
+async def ttt_table(lobby_id, player, symbol=None, x=None, y=None, prev_key=None):
+    ttt_table_markup = InlineKeyboardMarkup(row_width=3)
+    for i in range(3):
+        for j in range(3):
+            if x is not None and x == i and y == j:
+                ttt_table_markup.insert(InlineKeyboardButton(symbol, callback_data=f'TTT_{lobby_id}_nothing_{i}_{j}'))
+            elif symbol is None:
+                ttt_table_markup.insert(InlineKeyboardButton('⬜️', callback_data=f'TTT_{lobby_id}_{player}_{i}_{j}'))
+            else:
+                cd = prev_key[i][j].callback_data
+                if cd == 'nothing':
+                    ttt_table_markup.insert(InlineKeyboardButton(prev_key[i][j].text, callback_data=cd))
+                else:
+                    ttt_table_markup.insert(
+                        InlineKeyboardButton(prev_key[i][j].text, callback_data=f'TTT_{lobby_id}_{player}_{i}_{j}'))
+    return ttt_table_markup
+
+
+async def payment_info(merchant, pay_url, bill_id):
+    markup = InlineKeyboardMarkup()
+    markup.add(
+        InlineKeyboardButton('Оплатить', url=pay_url),
+        InlineKeyboardButton('Проверить оплату',
+                             callback_data=f'STATUS_PAY_{merchant}_{bill_id}')
+    )
     return markup
